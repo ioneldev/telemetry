@@ -19,6 +19,7 @@ To install the telemetry package, use the following command:
 
 ```bash
 go get github.com/ioneldev/telemetry
+go get github.com/ioneldev/telemetry/drivers
 ```
 
 ## Usage
@@ -46,8 +47,7 @@ func main() {
 
     // Use telemetry
     t.Info("This is a log message", map[string]string{"key": "value"})
-}
-```
+}```
 
 ### Configuration File
 
@@ -82,6 +82,19 @@ t.Info("Processing order", map[string]string{"orderID": "12345"})
 // ... more logs
 t.EndTransaction("transaction1")
 ```
+
+## Diagrams
+
+This section presents diagrams that illustrate the architecture and flow of the Go Telemetry Package.
+
+![Class Diagram](diagrams/class_diagram.png)
+*Class Diagram*
+
+![Component Diagram](diagrams/component_diagram.png)
+*Component Diagram*
+
+![Sequence Diagram](diagrams/sequence_diagram.png)
+*Sequence Diagram*
 
 ## Extending the Package
 
